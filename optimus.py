@@ -23,7 +23,7 @@ class PositionalEncoding(torch.nn.Module):
 
 class OptimusNorm(torch.nn.Module):
     def __init__(self, embed_dim: int, eps: float = 1e-5):
-        super.__init__()
+        super(OptimusNorm, self).__init__()
         self.weight = torch.nn.Parameter(torch.ones(embed_dim))
         self.eps = eps
 
